@@ -1,6 +1,17 @@
-const button = document.getElementById('primary-btn')
+const input = document.getElementById('name-input');
+const button = document.getElementById('submit-btn');
+
+let name = undefined
+
+input.addEventListener('change', (e) => {
+  name = e.target.value
+})
 
 button.addEventListener('click', (e) => {
   event.preventDefault()
-  alert('Hello')
+  if (name) {
+    alert(`Hello, ${name}`)
+  } else {
+    alert(`Hello, what is your name?`)
+  }
 })
