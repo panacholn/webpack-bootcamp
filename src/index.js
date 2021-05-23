@@ -1,3 +1,5 @@
+require('./index.scss')
+
 const input = document.getElementById('name-input');
 const button = document.getElementById('submit-btn');
 
